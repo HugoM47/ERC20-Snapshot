@@ -18,9 +18,9 @@ $sn = 0;
 // $i signifies the pages on ethplorer
 // the for loop iterates over the number of pages
 
-$tokenAddr = "0x";
+$tokenAddr = "0xf333b2ace992ac2bbd8798bf57bc65a06184afba";
 
-$pagesize = 5;
+$pagesize = 909;
 for($i = 1;$i <= $pagesize;$i++){
 $url = "https://ethplorer.io/service/service.php?data=".$tokenAddr."&page=tab%3Dtab-holders%26holders%3D".$i;
 $array = array(json_decode(fetch_content($url), true));
